@@ -1,0 +1,98 @@
+
+#response.suspense {
+    animation: flash 1s infinite;
+}
+
+/* Keyframes for flashing effect */
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #002868; /* Navy blue for the flag */
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #BF0A30; /* Red text for title */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+button {
+    background: linear-gradient(90deg, #BF0A30, #FFFFFF, #002868);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    text-shadow: 1px 1px 2px #000;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #002868, #ffffff, #BF0A30);
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #BF0A30; /* Red text for response */
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+.flag-stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.flag-stars::before,
+.flag-stars::after {
+    content: "⭐⭐⭐";
+    font-size: 1.5em;
+    color: #BF0A30; /* Red stars */
+    padding: 0 5px;
+}
+.info {
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #FFD700; /* Gold text for sarcasm */
+}
